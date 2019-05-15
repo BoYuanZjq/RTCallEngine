@@ -119,7 +119,7 @@ Pod::Spec.new do |spec|
 
   # spec.framework  = "SomeFramework"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
-  spec.frameworks =  "AVFoundation","AudioToolbox","VideoToolbox","CoreMedia","OpenGLES","Security","GLKit","UIKit","Foundation,CoreTelephony"
+  spec.frameworks =  "AVFoundation","AudioToolbox","VideoToolbox","CoreMedia","OpenGLES","Security","GLKit","UIKit","Foundation","CoreTelephony"
 
   # spec.library   = "iconv"
   # spec.libraries = "iconv", "xml2"
