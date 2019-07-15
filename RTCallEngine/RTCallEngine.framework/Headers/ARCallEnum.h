@@ -68,6 +68,9 @@ typedef NS_ENUM(NSInteger,ARCallCode) {
     ARCall_FORCE_EXIT = 211,             // 强制离开
     ARCall_AUTH_TIMEOUT = 212,           // 验证超时
     ARCall_NEED_VERTIFY_TOKEN = 213,     // 需要验证userToken
+    ARCall_WEB_DOMIAN_ERROR = 214,       // Web应用的域名验证失败
+    ARCall_IOS_BUNDLE_ID_ERROR = 215,    // iOS应用的BundleId验证失败
+    ARCall_ANDROID_PKG_NAME_ERROR = 216, // Android应用的包名验证失败
     
     ARCall_PEER_BUSY = 800,              // 对方正忙
     ARCall_OFFLINE = 801,                // 对方不在线
