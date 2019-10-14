@@ -20,4 +20,16 @@
 
 #import <RTCallEngine/ARObjects.h>
 
+//MeetHead
+#import <RTCallEngine/ARMeetEngine.h>
+
+#import <RTCallEngine/ARMeetKit.h>
+#import <RTCallEngine/ARMeetOption.h>
+#import <RTCallEngine/ARMeetKitDelegate.h>
+
+#import <RTCallEngine/ARMeetEnum.h>
+
+#import <RTCallEngine/ARShareDelegate.h>
+
+
 #endif /* ARCallSDK_h */

@@ -54,6 +54,15 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)turnOff;
 
+
+/**
+自定义Sip头信息
+
+@param head 自定义数据
+说明：必须放到 makeCall方法之前调用，该参数在服务对接的时候用
+*/
+- (void)setSipHeadData:(NSString*)head;
+
 #pragma mark - 本地和远程视频预览
 /**
  设置本地显示窗口
@@ -228,12 +237,12 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSArray<ARUserItem *> *)getUserList;
 
 /**
- 抓图
-
+ 截图功能
+ 
  @param userId 用户Id
- @return 图片
+ @param block 数据回调
  */
-- (UIImage*)snapPicture:(NSString*)userId;
+- (void)snapPicture:(NSString*)userId complete:(ScreenshotsBlock)block;
 
 #pragma mark - meet
 /**
