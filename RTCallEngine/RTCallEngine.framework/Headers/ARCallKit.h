@@ -41,6 +41,14 @@ NS_ASSUME_NONNULL_BEGIN
 - (void)setAsClerk:(NSString*)queueId option:(ARClertOption*)option;
 
 /**
+设置SIP呼叫模式(放到makeCall之前调用)
+
+@param enable YES:sip的号码就不需要加0了;NO:sip的号码就需要加0;
+
+*/
+- (void)setAsSipCTI:(BOOL)enable;
+
+/**
  上线
  
  @param token 令牌:客户端向自己服务申请获得，参考企业级安全指南
